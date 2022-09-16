@@ -6,7 +6,7 @@ on:
       - "**.ts"
 
 jobs:
-  print-event:
+  push-ts:
     runs-on: ubuntu-latest
 
     steps:
