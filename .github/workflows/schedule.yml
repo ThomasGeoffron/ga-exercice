@@ -1,0 +1,23 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron: 
+      - '5 * * * *'
+      - '0 */3 * * *'
+      - '30 */3 * * *'
+      - '* 3 * * 2'
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the event that triggered this workflow
+        run: |
+          echo ${{ github.event_name }}
+          echo "schedule"
+
+      - name: Print the current time
+        run: |
+          echo $(date)
