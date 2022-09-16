@@ -1,0 +1,21 @@
+name: Ignore staging
+
+on:
+  push:
+    ignore-branches: ['staging']
+
+jobs:
+  ignore-staging:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the event that triggered this workflow
+        run: |
+          echo ${{ github.event_name }}
+          echo "ignore staging"
+
+      - name: Print the current time
+        run: |
+          echo $(date)
+
+
