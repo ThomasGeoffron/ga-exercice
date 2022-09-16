@@ -1,0 +1,20 @@
+name: push feat
+
+on:
+  push:
+    paths:
+      - "node-app/images/**"
+
+jobs:
+  print-event:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the event that triggered this workflow
+        run: |
+          echo ${{ github.event_name }}
+          echo "push ts"
+
+      - name: Print the current time
+        run: |
+          echo $(date)
