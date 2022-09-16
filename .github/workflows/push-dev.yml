@@ -5,7 +5,7 @@ on:
     branches: ['dev']
 
 jobs:
-  print-event:
+  push-dev:
     runs-on: ubuntu-latest
 
     steps:

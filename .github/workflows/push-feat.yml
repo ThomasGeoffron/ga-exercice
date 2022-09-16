@@ -6,7 +6,7 @@ on:
       - "feat**"
 
 jobs:
-  print-event:
+  push-feat:
     runs-on: ubuntu-latest
 
     steps:

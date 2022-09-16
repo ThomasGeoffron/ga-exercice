@@ -5,7 +5,7 @@ on:
     ignore-branches: ['staging']
 
 jobs:
-  print-event:
+  ignore-staging:
     runs-on: ubuntu-latest
 
     steps:

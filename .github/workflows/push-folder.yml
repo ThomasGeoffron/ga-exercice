@@ -6,7 +6,7 @@ on:
       - "node-app/images/**"
 
 jobs:
-  print-event:
+  push-folder:
     runs-on: ubuntu-latest
 
     steps:
