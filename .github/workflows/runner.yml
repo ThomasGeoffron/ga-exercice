@@ -5,7 +5,6 @@ on:
 
 jobs:
   
-  continue-on-error: true
   build:
     strategy:
       matrix:
@@ -24,8 +23,10 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
 
+      continue-on-error: true
       - name: Testing the app
         run: |
           npm install
           npm test
+      continue-on-error: true
       
