@@ -22,11 +22,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.version }}
-
-      continue-on-error: true
+        continue-on-error: true
+      
       - name: Testing the app
         run: |
           npm install
           npm test
-      continue-on-error: true
+        continue-on-error: true
       
