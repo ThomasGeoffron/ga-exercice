@@ -25,5 +25,5 @@ jobs:
       - name: Testing the app
         run: |
           npm install
-          npm run test
+          npm test
       
