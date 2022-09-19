@@ -21,13 +21,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.version }}
-      
-      - name: LSing
-        run: |
-          ls -la
 
       - name: Testing the app
         run: |
           npm install
-          npm test
+          npm run test
       
