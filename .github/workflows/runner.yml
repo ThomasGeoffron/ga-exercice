@@ -21,9 +21,12 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
       
-      - name: Testing the app
+      - name: LSing
         run: |
           ls -la
+
+      - name: Testing the app
+        run: |
           npm install
           npm test
       
