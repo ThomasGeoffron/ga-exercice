@@ -1,7 +1,7 @@
 name: Ignore staging
 
 on:
-  worflow_dispatch:
+  workflow_dispatch:
   # push:
   #   ignore-branches: ['staging']
 
