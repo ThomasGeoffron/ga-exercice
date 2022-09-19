@@ -11,9 +11,14 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         
     runs-on: ${{ matrix.os }}
-    
+
     steps:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.version }}
+      
+      - name: Testing the app
+        run: |
+          npm install
+          npm test
       
