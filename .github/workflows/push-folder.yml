@@ -1,9 +1,10 @@
 name: push feat
 
 on:
-  push:
-    paths:
-      - "node-app/images/**"
+  workflow_dispatch:
+  # push:
+  #   paths:
+  #     - "node-app/images/**"
 
 jobs:
   push-folder:

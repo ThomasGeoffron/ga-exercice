@@ -1,9 +1,10 @@
 name: push feat
 
 on:
-  push:
-    paths:
-      - "**.ts"
+  workflow_dispatch:
+  # push:
+  #   paths:
+  #     - "**.ts"
 
 jobs:
   push-ts:
