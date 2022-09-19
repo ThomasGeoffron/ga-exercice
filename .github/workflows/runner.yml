@@ -15,8 +15,3 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
       
-			- name: Unit Tests
-			  run: |
-				  npm install
-				  npm test
-      

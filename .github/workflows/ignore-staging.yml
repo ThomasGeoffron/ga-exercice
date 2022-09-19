@@ -1,9 +1,9 @@
 name: Ignore staging
 
 on:
-  workflow_dispatch:
-#  push:
-#    ignore-branches: ['staging']
+  worflow_dispatch:
+  # push:
+  #   ignore-branches: ['staging']
 
 jobs:
   ignore-staging:
