@@ -12,6 +12,10 @@ jobs:
         
     runs-on: ${{ matrix.os }}
 
+    defaults:
+      run:
+        working-directory: node-app
+
     steps:
       - uses: actions/setup-node@v3
         with:
