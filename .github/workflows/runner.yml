@@ -23,6 +23,7 @@ jobs:
       
       - name: Testing the app
         run: |
+          ls -la
           npm install
           npm test
       
